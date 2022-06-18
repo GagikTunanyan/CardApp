@@ -1,0 +1,24 @@
+.parentSidebar {
+    width: 20%;
+    height: 100vh;
+    border-left: 1px solid;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.parentSidebar p {
+    font-weight: bold;
+    font-size: 18px;
+    letter-spacing: 0.2px;
+}
+
+@media (max-width: 950px) {
+    .parentSidebar {
+        padding: 10px;
+    }
+    .parentSidebar p {
+        font-size: 15px;
+        letter-spacing: normal;
+    }
+}

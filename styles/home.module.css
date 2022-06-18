@@ -1,0 +1,14 @@
+.home {
+    max-height: 100vh;
+    overflow: hidden;
+}
+.cardsWrapper {
+    margin: 0 auto;
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.cardItem {
+    width: calc(50% - 5px);
+}

@@ -1,0 +1,46 @@
+.card {
+    border: 2px solid;
+    border-radius: 3px;
+    box-sizing: border-box;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    position: relative;
+}
+.cardContent {
+    margin: 0;
+    font-size: 32px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.removeBTN {
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    width: 16px;
+    height: 15px;
+    background-color: transparent;
+    border: none;
+    transition: 0.3s;
+}
+
+.removeBTN:hover {
+    transform: scale(1.1);
+}
+
+.removeBTN::before, .removeBTN::after {
+    position: absolute;
+    top: -2px;
+    content: ' ';
+    height: 16px;
+    width: 2px;
+    background-color: #333;
+  }
+  .removeBTN::before {
+    transform: rotate(45deg);
+  }
+  .removeBTN::after {
+    transform: rotate(-45deg);
+  }
